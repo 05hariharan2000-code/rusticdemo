@@ -1,0 +1,60 @@
+.aboutus{
+display: flex;
+    width: 100%;
+    padding: 50px;
+    background-color: #a29a9a85;
+}
+.abouttitle{
+    width: 50%;
+    margin: 60px;
+    padding: 35px;
+}
+.abouttitle h1{
+    font-size: 70px;
+    font-weight: bold;
+}
+.abouttitle P{
+    font-style: italic;
+}
+.abouttitle button{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 30px;
+    background-color: gray;
+    box-shadow: black;
+}
+.imagesec{
+    width: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+@media only screen and (max-width: 640px) {
+.aboutus{
+    min-width: 50%;
+    margin-left: 0;
+    display: flex;
+    display: block;
+    overflow: hidden;
+    height: fit-content;
+}
+.abouttitle{
+width: 500px;
+margin-left: -50px;
+}
+.abouttitle button{
+    width: 100px;
+    font-size: 15px;
+}
+.abouttitle h1{
+font-size: 50px;
+}
+.abouttitle p h1{
+    height: 20px;
+    font-size: 1rem;
+    width: 100%;
+}
+.imagesec{
+margin-left: -40PX;
+width: min-content;
+}
+}

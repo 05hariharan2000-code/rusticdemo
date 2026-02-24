@@ -1,0 +1,27 @@
+.preimiumsec{
+    background-color: #322f2f22;
+    padding: 100px;
+}
+.card-body{
+    background-color: #f9f9f9;
+    height: 500px;
+    text-align: center;
+    text-decoration: none;
+}
+.card-body h4{
+    color: darkgreen;
+    font-size: 3rem;
+}
+.card-body span{
+    color: green;
+    font-size: 50px;
+}
+.card-body p{
+    font-weight: 500;
+}
+.card-body ul li{
+    padding: 10px;
+    list-style: none;
+    text-align: start;
+    padding-bottom: 30px;
+}

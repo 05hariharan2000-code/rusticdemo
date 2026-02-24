@@ -1,0 +1,41 @@
+.project{
+padding: 70px;
+background-color: #f9f9f9;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.project-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+.project-content{
+    color: rgba(56, 56, 56, 0.895);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+top: 50px;
+}
+.project-content h4{
+    color: rgba(69, 68, 68, 0.003);
+    font-size: 1rem;
+    padding: 30px;
+}
+.project-content h1{
+    font-size: 30px;
+    padding: 30px;
+
+}
+.project-card{
+  transition: ease-in-out
+}
+.project-card :hover{
+  transform: scale(1.1);
+  color:black;
+}

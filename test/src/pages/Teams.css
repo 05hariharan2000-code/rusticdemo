@@ -1,0 +1,60 @@
+.teamsec {
+  background-color: hsla(0, 0%, 98%, 0);
+  padding: 40px;
+}
+
+/* card shadow */
+.teamimg {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  justify-content: center;
+  margin: 20px;
+}
+
+/* social icons */
+.social {
+  text-align: left;
+}
+
+svg{
+  margin-left: 15px;
+}
+.social i:hover {
+  cursor: pointer;
+  color: gray;
+}
+
+/* images */
+.teamimg img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+
+@media only screen and (max-width: 640px) {
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .teamimg img {
+    width: 260px;
+    margin-left: -100px;
+  }
+
+  .teamcont {
+    text-align: center;
+  }
+
+  .teamcont h2,
+  .teamcont p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .social {
+display: flex;
+  }
+}
