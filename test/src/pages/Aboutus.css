@@ -1,60 +1,115 @@
-.aboutus{
-display: flex;
-    width: 100%;
-    padding: 50px;
-    background-color: #a29a9a85;
+.aboutus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 10%;
+  gap: 60px;
+  flex-wrap: wrap;
 }
-.abouttitle{
-    width: 50%;
-    margin: 60px;
-    padding: 35px;
+
+.imagesec img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
-.abouttitle h1{
-    font-size: 70px;
-    font-weight: bold;
+
+.abouttitle {
+  max-width: 600px;
 }
-.abouttitle P{
-    font-style: italic;
+
+.abouttitle h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #222;
 }
-.abouttitle button{
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 30px;
-    background-color: gray;
-    box-shadow: black;
+
+.abouttitle h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #444;
 }
-.imagesec{
-    width: 50%;
-    margin-left: 20px;
-    margin-right: 20px;
+
+.abouttitle h4 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #666;
 }
-@media only screen and (max-width: 640px) {
-.aboutus{
-    min-width: 50%;
-    margin-left: 0;
-    display: flex;
-    display: block;
-    overflow: hidden;
-    height: fit-content;
+
+.abouttitle p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #555;
 }
-.abouttitle{
-width: 500px;
-margin-left: -50px;
+
+.about-btn {
+  padding: 12px 25px;
+  border: none;
+  background: green;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
-.abouttitle button{
-    width: 100px;
-    font-size: 15px;
+
+.about-btn:hover {
+  background: rgb(68, 139, 68);
 }
-.abouttitle h1{
-font-size: 50px;
+/* Mission Section */
+.mission-section {
+  display: flex;
+  gap: 40px;
+  padding: 60px 10%;
+  background: #f9f9f9;
+  flex-wrap: wrap;
 }
-.abouttitle p h1{
-    height: 20px;
-    font-size: 1rem;
-    width: 100%;
+
+.mission-box {
+  flex: 1;
+  min-width: 300px;
 }
-.imagesec{
-margin-left: -40PX;
-width: min-content;
+
+.mission-box h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
 }
+
+.mission-box p {
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Why Choose Us */
+.why-choose {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.why-choose h2 {
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.why-card {
+  padding: 25px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-8px);
+}
+@media (max-width: 768px) {
+  .aboutus {
+    flex-direction: column;
+    text-align: center;
+  }
 }

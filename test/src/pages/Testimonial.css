@@ -41,6 +41,15 @@
   line-height: 1.6;
   line-clamp: 4;
   -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
+  -webkit-overflow-scrolling: none;
+
   overflow: hidden;
+}
+.testimonials-list {
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+}
+
+.testimonials-list::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }

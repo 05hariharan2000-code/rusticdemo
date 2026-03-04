@@ -26,7 +26,7 @@ const Testimonial = () => {
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>bob hanley/directory of spotify</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque excepturi repellendus, perspiciatis distinctio minus nulla porro omnis eveniet praesentium suscipit nihil earum dolorem alias quisquam debitis, nesciunt autem in? Tempore, distinctio? Praesentium, quidem illum beatae ex nobis tenetur ad consequuntur!</p>
+                  <p>Lorem ipsum dolor sit amet cXonsectetur, adipisicing elit. Itaque excepturi repellendus, perspiciatis distinctio minus nulla porro omnis eveniet praesentium suscipit nihil earum dolorem alias quisquam debitis, nesciunt autem in? Tempore, distinctio? Praesentium, quidem illum beatae ex nobis tenetur ad consequuntur!</p>
                 </div>
 
               </div>

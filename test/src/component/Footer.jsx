@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "./Footer.css"
 const Footer = () => {
   return (
     <div>
@@ -8,7 +8,10 @@ const Footer = () => {
   <div class="container">
     <div class="row">
       <div class="col-md-4 mb-4">
-        <h5 class="text-uppercase">My Website</h5>
+               <Link to="/" className="navbar-brand luxury-logo">
+  <img src={logo} alt="RS Logo" className="brand-logo" />
+  <span className="brand-text">Rustic Studio</span>
+</Link>
         <p>
           We build modern, responsive websites using the latest technologies.
         </p>

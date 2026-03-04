@@ -1,124 +1,112 @@
 
-*{
-    margin: 0%;
-    font-family: sans-serif;
-    box-sizing: border-box;
-}
-html::-webkit-scrollbar-thumb{
-    background: rgba(11, 10, 10, 0.658); 
-    border-radius: 10px;
-}
-html::-webkit-scrollbar{
-    width: 10px;
-}
-.navbar{
-  border: 0%;
-  padding: 0px;
-  margin: 0%;
-  overflow: hidden;
-}
-.container-fluid{
-  background-color: grey;
-  border-top: -40px;
-}
-.navbarlogo{
-font-weight: bold;
-text-decoration: none;
-text-decoration-color: black;
-color: rgba(11, 10, 10, 0.658);
-font-size: 40px;
-margin-left: 10px;
-margin-left: 30px;
-padding: 20px;
-}
-.logo h1 a{
-  cursor: pointer;
-  text-decoration: none;
-}
-ul.navlist {
-font-size: 25px;
-margin-left: 120px;
-position: relative;
-left: 240px;
-}
-a {
-  text-decoration: none;
-  text-decoration-color: rgba(11, 10, 10, 0.658);  
+.luxury-nav {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  transition: all 0.4s ease;
+  padding: 18px 0;
 }
 
-.signin{
-  display: inline-block;
-  width: 100px;
-  text-decoration: none;
-  border: 2px solid #ccc;
-  background-color: rgba(11, 10, 10, 0.658); ;
-  border-radius: 25px;
-  position: relative;
-  right: 100px;
-  transition: ease-in;
-  transition-duration: .5s;
-}
-.slist{
-    text-align: center;
-    color: white;
-    padding-top: 10px;
-    font-weight: bold;
-}
-.signin:hover{
-    color: black;
-    width: 120px;
-}
-.search-container {
-    margin-top: -50px;
-  text-align: center;
-  margin-top: 50px;
+/* Navbar Background */
+.luxury-nav {
+  transition: all 0.3s ease;
+  padding: 15px 0;
 }
 
-.search-form input,
-.search-form button {
-  display: inline-block;
-  vertical-align: middle;
-      margin-top: -50px;
+/* Navbar when scrolled */
+.nav-scrolled {
+  background: #111;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
 }
 
-.search-form input {
-  width: 350px;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  outline: none;
-
+/* Logo container */
+.luxury-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.search-form button {
-  padding: 10px 18px;
-  font-size: 16px;
-  border: 1px solid #28a745;
-  background-color: rgba(11, 10, 10, 0.658);
-  color: white;
-  cursor: pointer;
-  border-radius: 15px;
-  position: relative;
-  right: 88px;
-  opacity: 2;
-  z-index: 2;
+/* Logo image */
+.brand-logo {
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  border-radius: 50%; /* makes it round */
 }
 
-.search-form button:hover {
-  background-color: black;
-}
-@media only screen and (max-width: 640px) {
-.signin{
-  margin-left: 180px;
-  margin-bottom: 20px;
-}
-.search-container{
-size: 20vw;
-}
-ul.navlist{
+/* Logo text */
+.brand-text {
   font-size: 20px;
-  padding: -10px;
-  margin-left: -45%;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 1px;
 }
+.nav-scrolled {
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.luxury-logo {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #d4af37; /* Gold */
+}
+
+
+.luxury-link {
+  color: #ffffff;
+  margin: 0 18px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.luxury-link {
+  color: white !important;   /* or any color you want */
+}
+
+.luxury-link:hover {
+  color: #c5a47e !important; /* optional hover color */
+}
+
+.luxury-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #d4af37;
+  left: 0;
+  bottom: -5px;
+  transition: 0.4s;
+}
+
+.luxury-link:hover::after {
+  width: 100%;
+}
+
+/* Hover color */
+.luxury-link:hover {
+  color: #d4af37;
+}
+
+/* Luxury Button */
+.luxury-btn {
+  margin-left: 25px;
+  padding: 8px 22px;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #d4af37, #f5e6b2);
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.luxury-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+}
+
+
+.custom-toggler .navbar-toggler-icon {
+  filter: invert(1);
 }

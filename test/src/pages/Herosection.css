@@ -1,13 +1,141 @@
-.carousel-caption{
-    margin-right: 600px;
+.herosection {
+  width: 100%;
 }
 
-.carousel-caption h5{
-    font-size: 80px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+/* Image */
+.hero-img {
+  height: 600px;
+  object-fit: cover;
 }
 
-.carousel-caption p{
-    font-size: 50px;
+/* Button */
+.hero-btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-top: 10px;
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #cc5200;
+}
+
+/* Content Section */
+.hero-content {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-content h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.hero-content p {
+  max-width: 700px;
+  margin: auto;
+  color: gray;
+}
+
+/* Features */
+.hero-features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-features div {
+  max-width: 250px;
+}
+.carousel-item {
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.custom-caption {
+  z-index: 2;
+  bottom: 30%;
+}
+
+.hero-img {
+  height: 600px;
+  object-fit: cover;
+}
+/* Extra Section */
+.hero-extra {
+  padding: 80px 10%;
+  background: #f8f9fa;
+}
+
+.extra-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.extra-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.extra-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.extra-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.extra-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.extra-text p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.extra-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.extra-list li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.extra-btn {
+  padding: 12px 25px;
+  border: none;
+  background: green;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.extra-btn:hover {
+  background: black;
 }
